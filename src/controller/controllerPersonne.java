@@ -23,9 +23,9 @@ public class controllerPersonne {
 		personneDao.insert(p);
 		
 		//Affiche liste à jour
-		List<Personne> personnes1 = personneDao.selectAll();
-		for(Personne p1 : personnes1) {
-			System.out.println(p1);
+		personnes = personneDao.selectAll();
+		for(Personne ptemp : personnes) {
+			System.out.println(ptemp);
 		}
 		
 		System.out.println("");
@@ -38,10 +38,11 @@ public class controllerPersonne {
 		
 		System.out.println("");
 
-		List<Personne> personnes2 = personneDao.selectAll();
-		for(Personne p3 : personnes2) {
-			System.out.println(p3);
-		}
+		//Affiche liste à jour
+		personnes = personneDao.selectAll();
+			for(Personne ptemp : personnes) {
+				System.out.println(ptemp);
+			}
 		
 	
 		//Update de la personne
@@ -49,10 +50,11 @@ public class controllerPersonne {
 		
 		System.out.println("");
 
-		List<Personne> personnes3 = personneDao.selectAll();
-		for(Personne p5 : personnes3) {
-			System.out.println(p5);
-		}		
+		//Affiche liste à jour
+				personnes = personneDao.selectAll();
+				for(Personne ptemp : personnes) {
+					System.out.println(ptemp);
+				}	
 		}
 	
 	}
